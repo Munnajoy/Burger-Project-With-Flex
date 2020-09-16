@@ -1,0 +1,356 @@
+/* global css section */
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap');
+
+/*  font-family: 'Alfa Slab One', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, button{
+    font-family: 'Alfa Slab One', cursive;
+}
+h2,h3,h4,h5,h6,a{
+    font-family: 'Bebas Neue', cursive;
+}
+p, span{
+    font-family: 'Montserrat', sans-serif;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/banner.png);
+    background-position: top;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    padding: 25px 0;
+    justify-content: space-between; 
+}
+.navbar-nav .contract{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.navbar-nav .contract img{
+    margin-right: 15px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.menu ul li a{
+    color: #000;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #42200B;
+}
+.body{
+    height: 60vh;
+    display: table-cell;
+    vertical-align: middle;
+    color: #42200B;
+}
+.body p{
+    border: 2px dashed #42200B;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.body h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-shadow: 3px 4px #FFE8BB;
+}
+.header .body h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 4px #FFE8BB;
+}
+.gallery{
+    width: 100%;
+    padding: 25px 0;
+}
+.gallery-body{
+    display: flex;
+    
+}
+.left-cont{
+    position: relative;
+    padding: 0 25px;
+}
+.left-cont .text-img>h3{
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+.left-cont .text-img{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 25px;
+    color: #fff;
+}
+.left-cont .text-img h4{
+    font-size: 25px; 
+    letter-spacing: 1px;
+}
+.up-cont,.down-cont{
+    position: relative;
+}
+.down-cont{
+    margin-top: 32px;
+}
+.right-cont .text-img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 25px;
+    color: #fff;
+    line-height: 225%;
+}
+.right-cont .text-img>h3{
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+.right-cont .text-img h4{
+    font-size: 25px; 
+    letter-spacing: 2px;
+}
+.btn-primary{
+    text-align: center;
+    margin-top: 90px;
+}
+.btn-primary button{
+    text-transform: uppercase;
+    padding: 15px 35px;
+    background: #FFC135;
+    border: none;
+    border: 2px solid #FFDC92;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #42200B;
+}
+/* category section css */
+.category{
+    width: 100%;
+    padding: 5px 30px 30px;
+}
+.cat-head{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.cat-head h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.cat-head p{
+    margin-bottom: 45px;
+}
+.cat-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cat-body .card{
+    width: 30%;
+    text-align: center;
+}
+.card img{
+    width: 400px;
+}
+.card h2{
+    padding: 8px;
+}
+.card button{
+    text-transform: uppercase;
+    padding: 8px 15px;
+    background: #DE1C1C;
+    border: none;
+    border: 2px solid #FFDC92;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 30px 0;
+}
+/* slider section css */
+.slider{
+    width: 100%;
+    padding: 30px;
+}
+.item .owl{
+    display: flex;
+}
+.item .owl .slider-body{
+    width: 50%;
+    text-align: justify;
+    padding: 90px 0;
+}
+.slider-body h4{
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.slider-body h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.item .owl .slider-img{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+.item .owl .slider-img img{
+    width: 80%;
+}
+/* Form sec css */
+.form{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/burder-s.png);
+    background-size: cover;
+    padding: 30px;
+
+}
+.form-area{
+    width: 100%;
+    text-align: center;
+}
+.form-area .form-sec{
+    width: 100%;
+    padding: 92px 50px 40px;
+}
+.form-sec h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.form-sec h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.form-body{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15.1%;
+}
+.form-body input{
+    width: 30%;
+    padding: 12px;
+    border-radius: 5px;
+    
+}
+.form-body button{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    background: #bf2222;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.footer{
+    width: 100%;
+    padding: 30px 30px;
+}
+.footer .footer-area{
+    background: url(../img/bottom.png);
+    width: 100%;
+    height:60vh;
+    background-size: cover;
+}
+.footer-body{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-sec{
+    color: #fff;
+    width: 50%;
+    padding: 0 65px;
+    
+}
+.footer-sec img{
+    padding: 20px;
+    text-align: justify;
+}
+.footer-sec p{
+    padding: 20px;
+    text-align: justify;
+}
+.footer-body .footer-cont{
+    width: 50%;
+    padding:180px 0 0 120px;
+    
+}
+.footer-cont span{
+    color: #fff;
+    width: 60%;
+    
+}
+.footer-cont i{
+    color: #fff;
+    font-size: 25px;
+    padding:5px 10px;
+    margin-right: 10px;
+}
+.social{
+    width: 100%;
+    padding: 35px 30px 0;
+    display: flex;
+}
+.social .copyright{
+    width: 80%;
+    color: #fff;
+}
+.copyright p{
+    font-size: 14px;
+}
+.social-sec{
+    width: 20%;
+    text-align: right;
+}
+.social-sec ul li{
+    display: inline-block;
+    justify-content: end;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.social-sec ul li a{
+    color: #000;
+}
+.social-sec ul li a i{
+    padding: 6px 9px;
+}
+
